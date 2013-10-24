@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Grocery list:
+  = @item.grocery_list
+%p
+  %b Name:
+  = @item.name
+%p
+  %b Price:
+  = @item.price
+%p
+  %b Units:
+  = @item.units
+%p
+  %b Total:
+  = @item.total
+
+= link_to 'Edit', edit_item_path(@item)
+\|
+= link_to 'Back', items_path

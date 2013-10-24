@@ -1,0 +1,24 @@
+<h1>New movement</h1>
+
+<%= render 'form', :movement => Movement.new %>
+
+<h1>Movements</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>Subject</td>
+      <td>Date</td>
+      <td>Type</td>
+      <td>Amount</td>
+    </tr>
+  </thead>
+  <tbody id="movements" >
+  <% @movements.each do |movement| %>
+    <%= render "movement_row", :movement => movement %>
+  <% end %>
+  </tbody>
+</table>
+
+<br />
+

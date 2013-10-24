@@ -1,0 +1,17 @@
+.fieldset
+  .control-group
+    = f.label :name, "Name"
+    .controls
+      = f.text_field :name
+
+  = f.label :price, "Price"
+  = f.text_field :price
+
+  = f.label :units, "Units"
+  = f.text_field :units
+
+  = f.label :total, "Total"
+  = f.text_field :total
+  
+  = f.hidden_field :_destroy
+  = link_to "remove", '#', class: "remove_fields"

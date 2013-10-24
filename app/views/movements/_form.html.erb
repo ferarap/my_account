@@ -1,0 +1,10 @@
+<%= simple_form_for(movement, :remote => true, html: {class: "form-inline"}) do |f| %>
+	<%= f.error_notification %>
+  <%= display_base_errors movement %>
+
+  <%= f.text_field :date, :"data-date-format" => "dd/mm/yyyy", class: "datepicker", placeholder: "Date" %>
+  <%= f.text_field :subject, placeholder: "Subject" %>
+  <%= f.text_field :amount,  placeholder: "Amount" %>
+  <%= f.text_field :type_movement, placeholder: "Type" %>
+  <%= link_to "Send", "#",:onclick=>'create_movement(); return false;', :class => 'btn btn-primary', :id => "send_movement" %>
+<% end %>
