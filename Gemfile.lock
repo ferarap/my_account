@@ -58,6 +58,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    font-awesome-sass (3.2.1.4)
+      sass-rails (>= 3.1.1)
     haml (4.0.2)
       tilt
     haml-rails (0.4)
@@ -157,6 +159,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 3.2.1)
   devise
+  font-awesome-sass
   haml-rails
   jquery-rails
   meta_request

@@ -25,6 +25,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'bootstrap-datepicker-rails'
 
