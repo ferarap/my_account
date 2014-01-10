@@ -2,7 +2,7 @@ class MovementsController < ApplicationController
   # GET /movements
   # GET /movements.json
   def index
-    @movements = Movement.all
+    @movements = MovementDecorator.decorate_collection(Movement.all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class MovementsController < ApplicationController
   # GET /movements/1
   # GET /movements/1.json
   def show
-    @movement = Movement.find(params[:id])
+    @movement = Movement.find(params[:id]).decorate
 
     respond_to do |format|
       format.html # show.html.erb
