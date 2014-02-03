@@ -1,5 +1,3 @@
-class Movement < ActiveRecord::Base
-  attr_accessible :date, :subject, :type_movement, :amount
-  
+class Movement < ActiveRecord::Base  
   scope :previous, where("date < ?", Time.now)
 end
